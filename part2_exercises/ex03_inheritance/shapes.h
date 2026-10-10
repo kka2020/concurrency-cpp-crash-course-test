@@ -34,7 +34,7 @@ class Shape {
 
 class Circle : public Shape {
  public:
-  explicit Circle(double radius);
+  Circle(double radius);
   double Area() const;      // pi * r * r  (std::numbers::pi is in <numbers>)
   std::string Name() const; // "circle"
   double Radius() const;
@@ -57,7 +57,7 @@ class Rectangle : public Shape {
 // A square is a rectangle whose width equals its height.
 class Square : public Rectangle {
  public:
-  explicit Square(double side);  // must reuse the Rectangle constructor
+  Square(double side);  // must reuse the Rectangle constructor
   // "square (a kind of rectangle)" - build it by calling Rectangle's Name().
   std::string Name() const;
 };
