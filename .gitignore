@@ -1,0 +1,15 @@
+# CMake / CLion build output
+cmake-build-*/
+build/
+out/
+Testing/
+
+# IDE settings
+.idea/
+.vs/
+.vscode/
+
+# Binaries
+*.exe
+*.o
+*.obj
